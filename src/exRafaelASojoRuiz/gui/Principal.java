@@ -13,16 +13,9 @@ public class Principal {
 	private static JFrame frame;
 
 	public static void main(String[] args) {
-
-		// Intentamos leer el fichero por primera vez
 		leer();
-		
-		// Escribimos el fichero
 		escribir();
-		
-		// Mostramos el alta de productos
 		mostrarAlta();
-
 	}
 
 	static AltaProducto altaProducto = new AltaProducto();
@@ -45,8 +38,5 @@ public class Principal {
 			JOptionPane.showMessageDialog(frame, e.getMessage());
 		}
 	}
-	
-	
-
 
 }
