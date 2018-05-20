@@ -4,7 +4,7 @@ ExamenProgramación
 Parto de una vez el examen hecho la siguiente corrección:
 
 
-* _3 main_
+* ~3 main~
 * Fichero machacado correcto
 * Admites perecedero y producto con el mismo nombre
 * No limpias fecha en mostrar
