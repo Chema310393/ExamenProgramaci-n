@@ -33,7 +33,7 @@ public class Fichero {
 
 	public static void escribirFichero() throws FileNotFoundException, IOException {
 		if (FICHERO.exists())
-			JOptionPane.showMessageDialog(null, "Voy a machacar el fichero", "Mensaje", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Voy a machacar el fichero");
 
 		LocalDate fecha = LocalDate.now();
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(FICHERO))) {
