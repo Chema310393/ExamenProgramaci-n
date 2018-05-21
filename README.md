@@ -11,7 +11,7 @@ Parto de una vez el examen hecho la siguiente corrección:
 * ~No limpias tras alta.~
 * ~Admites cualquier fecha~
 * ~No funciona el iterador derecha/izquierda~
-* ~regex de nombre admites un espacio. "www " y "www" ~
+* ~regex de nombre admites un espacio. "www " y "www"~
 * ~Admites variando fecha?~
 * ~FICHERO lo creas en Principal para Fichero.java, y no lo usas en otro sitio. Diseño OO~
 * ~No usas búfer~
