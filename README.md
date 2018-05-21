@@ -19,7 +19,7 @@ Parto de una vez el examen hecho la siguiente corrección:
 * ~No usas fichero de texto~
 * ~Podrías haber usado la versión abreviada
   JOptionPane.showMessageDialog(null, "Voy a machacar el fichero", "Mensaje",JOptionPane.PLAIN_MESSAGE);~
-* La declaración de las variables suelen hacerse al principio, cuestión de orden
+* ~La declaración de las variables suelen hacerse al principio, cuestión de orden~
 * ~static AltaProducto altaProducto = new AltaProducto(); Tendrías que haberlo creado local~
 * ~Duplicación de salir. No utilizar la herencia para reutilización de código~
 * ~Sobra en la capa de negocio
@@ -27,6 +27,6 @@ Parto de una vez el examen hecho la siguiente corrección:
             JOptionPane.showMessageDialog(null, "Voy a machacar el fichero","Mensaje",JOptionPane.PLAIN_MESSAGE);~
 *~usa equalsIgnoreCase en equals de producto
  } else if (!nombre.equals(other.nombre))~
-* CUIDADO CON EL getClass()
+* ~CUIDADO CON EL getClass()~
 * ~LEY DE DEMETRIO. new Producto() al envoltorio del arrayList
     Gestion.altaProducto(new Producto(textFieldNombre.getText()));~

@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 import exRafaelASojoRuiz.negocio.excepciones.NombreNoValidoException;
 
 public class Producto {
+	
 	String nombre;
 	private static final Pattern patron = Pattern.compile("^([a-zA-Z]{3,}?)(\\s[a-zA-Z]{3,}?)*$");
 
@@ -12,7 +13,6 @@ public class Producto {
 		setNombre(nombre);
 	}
 
-	
 	private void checkearNombre(String nombre) throws NombreNoValidoException {
 		if(!patron.matcher(nombre).matches())
 			throw new NombreNoValidoException("El nombre del producto no es válido: "+nombre);

@@ -11,14 +11,15 @@ import exRafaelASojoRuiz.negocio.excepciones.FicheroNoExisteException;
 public class Principal {
 
 	private static JFrame frame;
-
+	private static AltaProducto altaProducto = new AltaProducto();
+	
 	public static void main(String[] args) {
 		leer();
 		escribir();
 		mostrarAlta();
 	}
 
-	private static AltaProducto altaProducto = new AltaProducto();
+	
 	private static void mostrarAlta() {
 		altaProducto.setVisible(true);
 	}

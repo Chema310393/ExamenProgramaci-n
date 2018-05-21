@@ -10,7 +10,6 @@ import exRafaelASojoRuiz.negocio.excepciones.ProductoYaExisteException;
 public class Stock {
 
 	public static  ArrayList<Producto> almacen  = new ArrayList<Producto>();
-	
 
 	public static  void altaProducto(String nombreProducto) throws ProductoYaExisteException, NombreNoValidoException {
 		Producto producto = new Producto(nombreProducto);

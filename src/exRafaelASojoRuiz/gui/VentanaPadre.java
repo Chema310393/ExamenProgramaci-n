@@ -17,7 +17,6 @@ public abstract class VentanaPadre extends JDialog {
 
 	private static final long serialVersionUID = 1L;
 
-	// Definimos las variables y el contenido del JFrame
 	final JPanel contentPanel = new JPanel();
 	public JTextField textFieldNombre;
 	public JTextField textFieldFecha;
@@ -26,7 +25,6 @@ public abstract class VentanaPadre extends JDialog {
 	public JLabel lblFechaCaducidad;
 	public JButton btnBotonIzquierda;
 	
-	// Creamos y configuramos la ventana
 	public VentanaPadre() {
 		super();
 		setListeners();
@@ -56,7 +54,6 @@ public abstract class VentanaPadre extends JDialog {
 		textFieldNombre.setColumns(10);
 		textFieldNombre.setBounds(177, 11, 86, 20);
 
-		// Le añadimos todos los componentes
 		getContentPane().setLayout(null);
 		getContentPane().add(btnBotonIzquierda);
 		getContentPane().add(btnBotonDerecha);
@@ -79,13 +76,10 @@ public abstract class VentanaPadre extends JDialog {
 		});
 	}
 
-	abstract void preparar();
-
 	void limpiar() {
 		textFieldFecha.setText("");
 		textFieldNombre.setText("");
 	}
-
 
 	
 	void salir() {
@@ -96,6 +90,6 @@ public abstract class VentanaPadre extends JDialog {
 		}
 	}
 	
-	
+	abstract void preparar();
 
 }

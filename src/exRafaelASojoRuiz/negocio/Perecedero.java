@@ -6,6 +6,7 @@ import exRafaelASojoRuiz.negocio.excepciones.FechaNoValidaException;
 import exRafaelASojoRuiz.negocio.excepciones.NombreNoValidoException;
 
 public class Perecedero extends Producto {
+	
 	String fechaCaducidad;
 	private static final Pattern patron = Pattern.compile("^[0-3]?\\d{1}\\/[0-1]?\\d\\/\\d{4}$");
 	

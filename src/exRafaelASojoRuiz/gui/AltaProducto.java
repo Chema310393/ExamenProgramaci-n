@@ -13,6 +13,7 @@ import exRafaelASojoRuiz.negocio.excepciones.ProductoYaExisteException;
 public class AltaProducto extends VentanaPadre {
 
 	private static final long serialVersionUID = 4178253007506723500L;
+	private MostrarStock mostrarStock = new MostrarStock();
 
 	public AltaProducto() {
 		super();
@@ -44,7 +45,7 @@ public class AltaProducto extends VentanaPadre {
 	}
 	
 	
-	private MostrarStock mostrarStock = new MostrarStock();
+	
 	void mostrarStock() {
 		mostrarStock.setVisible(true);
 		this.setVisible(false);
