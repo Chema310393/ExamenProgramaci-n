@@ -6,7 +6,7 @@ import exRafaelASojoRuiz.negocio.excepciones.NombreNoValidoException;
 
 public class Producto {
 	String nombre;
-	private static final Pattern patron = Pattern.compile("^([a-zA-Z]{3,}\\s?)+$");
+	private static final Pattern patron = Pattern.compile("^([a-zA-Z]{3,}?)(\\s[a-zA-Z]{3,}?)*$");
 
 	public Producto(String nombre) throws NombreNoValidoException{
 		setNombre(nombre);
