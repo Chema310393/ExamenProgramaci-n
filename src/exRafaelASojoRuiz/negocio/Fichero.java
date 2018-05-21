@@ -11,8 +11,6 @@ import java.time.LocalDate;
 import java.time.format.TextStyle;
 import java.util.Locale;
 
-import javax.swing.JOptionPane;
-
 import exRafaelASojoRuiz.negocio.excepciones.FicheroNoExisteException;
 
 public class Fichero {
@@ -32,8 +30,6 @@ public class Fichero {
 	}
 
 	public static void escribirFichero() throws FileNotFoundException, IOException {
-		if (FICHERO.exists())
-			JOptionPane.showMessageDialog(null, "Voy a machacar el fichero");
 
 		LocalDate fecha = LocalDate.now();
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(FICHERO))) {
@@ -47,5 +43,9 @@ public class Fichero {
 			bw.write("Rafael Á. Sojo Ruíz");
 		}
 
+	}
+
+	public static boolean existeFichero() {
+		return FICHERO.exists();
 	}
 }

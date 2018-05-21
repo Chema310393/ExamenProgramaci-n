@@ -18,13 +18,15 @@ public class Principal {
 		mostrarAlta();
 	}
 
-	static AltaProducto altaProducto = new AltaProducto();
+	private static AltaProducto altaProducto = new AltaProducto();
 	private static void mostrarAlta() {
 		altaProducto.setVisible(true);
 	}
 
 	private static void escribir() {
 		try {
+			if (Fichero.existeFichero())
+				JOptionPane.showMessageDialog(null, "Voy a machacar el fichero");
 			Fichero.escribirFichero();
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(frame, e.getMessage());
@@ -33,7 +35,7 @@ public class Principal {
 
 	private static void leer() {
 		try {
-			JOptionPane.showMessageDialog(null, Fichero.leerFichero());
+			JOptionPane.showMessageDialog(frame, Fichero.leerFichero());
 		} catch (FicheroNoExisteException | IOException e) {
 			JOptionPane.showMessageDialog(frame, e.getMessage());
 		}

@@ -47,7 +47,7 @@ public class Producto {
 		if (nombre == null) {
 			if (other.nombre != null)
 				return false;
-		} else if (!nombre.equals(other.nombre))
+		} else if (!nombre.equalsIgnoreCase(other.nombre))
 			return false;
 		return true;
 	}
